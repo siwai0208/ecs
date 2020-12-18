@@ -13,10 +13,10 @@ ECSでweb,appコンテナ+RDSでアプリを動作させる
 ### 0. RDS構築済みであること
 Cloudformation で RDSを作成
 以下パラメータを控えておく
- DBName
- DBUser
- DBPassword
- DBInstanceEndpointAddress
+- DBName
+- DBUser
+- DBPassword
+- DBInstanceEndpointAddress
 
 ### 1. ECRレポジトリの作成
 AWSマネコンで　ECR > リポジトリ > リポジトリを作成
@@ -48,15 +48,15 @@ docker images
  ecs_web  latest
  ecs_app  latest
 
-docker tag ecs_web:latest 551419436295.dkr.ecr.ap-northeast-1.amazonaws.com/laravel-app-ecs:web
+docker tag ecs_web:latest xxxxxxxxxxxx.dkr.ecr.ap-northeast-1.amazonaws.com/laravel-app-ecs:web
 docker tag ecs_app:latest xxxxxxxxxxxx.dkr.ecr.ap-northeast-1.amazonaws.com/laravel-app-ecs:app
 ```
 
 * DockerイメージをECRリポジトリにPUSH
 
 ```
-docker push 551419436295.dkr.ecr.ap-northeast-1.amazonaws.com/laravel-app-ecs:web
-docker push 551419436295.dkr.ecr.ap-northeast-1.amazonaws.com/laravel-app-ecs:app
+docker push xxxxxxxxxxxx.dkr.ecr.ap-northeast-1.amazonaws.com/laravel-app-ecs:web
+docker push xxxxxxxxxxxx.dkr.ecr.ap-northeast-1.amazonaws.com/laravel-app-ecs:app
 ```
 
 * 確認
