@@ -16,7 +16,7 @@ Cloudformation で RDSを作成
 - DBName
 - DBUser
 - DBPassword
-- DBInstanceEndpointAddress
+-` DBInstanceEndpointAddress
 
 ### 1. ECRレポジトリの作成
 AWSマネコンで　ECR > リポジトリ > リポジトリを作成
