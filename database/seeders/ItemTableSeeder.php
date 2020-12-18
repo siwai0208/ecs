@@ -100,13 +100,6 @@ class ItemTableSeeder extends Seeder
       ]);
 
       DB::table('items')->insert([
-         'name' => 'ソムタム・プー',
-         'detail' => '本場タイの味',
-         'price' => '60',
-         'imgpath' => 'ソムタム・プー.jpg',
-      ]);
-
-      DB::table('items')->insert([
          'name' => 'プラーガポン・トート・ナンプラー',
          'detail' => '本場タイの味',
          'price' => '200',
@@ -142,10 +135,10 @@ class ItemTableSeeder extends Seeder
       ]);
 
       DB::table('items')->insert([
-         'name' => 'トムカーガイ',
+         'name' => 'カオソイ',
          'detail' => '本場タイの味',
-         'price' => '100',
-         'imgpath' => 'トムカーガイ.jpg',
+         'price' => '60',
+         'imgpath' => 'カオソイ.jpg',
       ]);
 
       DB::table('items')->insert([

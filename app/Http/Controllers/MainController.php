@@ -7,9 +7,6 @@ use Illuminate\Support\Facades\Auth;
 use App\Models\Item; 
 use App\Models\Cart; 
 
-use Illuminate\Support\Facades\Mail;
-use App\Mail\Thanks;
-
 class MainController extends Controller
 {
     public function index()

@@ -4,7 +4,7 @@
 <div class="container-fluid">
    <div class="">
        <div class="mx-auto" style="width:auto;">
-         <div class="top" style="height:60vh; display:flex; background-size:cover; justify-content:center; align-items:center; background-image: url(/image/top.jpg);">
+         <div class="top" style="height:60vh; display:flex; background-size:cover; justify-content:center; align-items:center; background-image: url({{ Storage::disk('s3')->url('image')}}/top.jpg);">
            <h1 style="color:#fefefe; text-align:center; font-size:6em; ; font-weight:600; "> (Sample App)<br>Easy Food Delivery!!  </h1>
          </div>
            <div class="">
@@ -16,7 +16,7 @@
                             <div class="mycart_box">
                                         {{$item->name}} <br>
                                         {{$item->price}}バーツ<br>
-                                        <image src="/image/{{$item->imgpath}}" alt="" class="incart" ><br>
+                                        <image src="{{ Storage::disk('s3')->url('image')}}/{{$item->imgpath}}" alt="" class="incart" ><br>
                                         {{$item->detail}} <br>
                                         <br>
                                     

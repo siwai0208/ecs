@@ -15,7 +15,7 @@
                         <div class="mycart_box">
                             {{$mycart->item->name}} <br>              
                             {{ number_format($mycart->item->price)}}バーツ </p>               
-                            <img src="/image/{{$mycart->item->imgpath}}" alt="" class="incart" >
+                            <img src="{{ Storage::disk('s3')->url('image')}}/{{$mycart->item->imgpath}}" alt="" class="incart" >
                             <br>
                             <form action="/delcart" method="post">
                                 @csrf
